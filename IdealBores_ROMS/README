@@ -1,0 +1,13 @@
+Setup files for idealized internal tidal bore ROMS simulations in Dauhajre et al. 2021 (JPO)
+
+The following two scripts are called to generate netcdf files to be used with ROMS
+
+generate_set_variable_N2.py --> creates grid, initial condition, and boundary condition for 
+                                variable stratification cases (pink/purple lines in Fig. 2 of Dauhajre et al. 2021)
+
+generate_set_uniform_N2.py --> creates grid, initial condition, and boundary condition for 
+                                uniform stratification cases (yellow/green/blue lines in Fig. 2 of Dauhajre et al. 2021)
+
+
+To create fixed U_0 / c cases, turn on U0_c_fixed boolean switch in params.py
+
