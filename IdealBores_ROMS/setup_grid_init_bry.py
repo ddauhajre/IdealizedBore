@@ -328,7 +328,7 @@ print '     U0 / c = ' + str(U0 / ce[0])
 
 #Other fields match initial condition at offshore point
 for t in range(nt):
-    ubar_west[t,:] = ubar[:,0]
+    ubar_west[t,:] = np.mean(u_west[t,:,:],axis=0)
     v_west[t,:,:] = v[:,:,0]
     vbar_west[t,:] = vbar[:,0]
     zeta_west[t,:] = zeta[:,0]
